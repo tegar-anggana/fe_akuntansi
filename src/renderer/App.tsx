@@ -12,6 +12,7 @@ import HomeScreen from './screens/HomeScreen';
 import ProtectedRoute from './routing/ProtectedRoute';
 import './App.css';
 import 'tailwindcss/tailwind.css';
+import DaisyUIDemo from './DaisyUIDemo';
 
 function App() {
   return (
@@ -29,7 +30,10 @@ function App() {
     //     </Routes>
     //   </main>
     // </Router>
-    <h1>Hello FDPJ</h1>
+    <div>
+      <h1>Hello FDPJ</h1>
+      <DaisyUIDemo />
+    </div>
   );
 }
 
