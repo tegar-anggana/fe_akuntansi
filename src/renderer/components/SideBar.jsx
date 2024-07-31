@@ -1,29 +1,41 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function SideBar() {
   return (
     <div>
-      <div className="navbar bg-base-100">
-        <div className="flex-none">
-          <ul className="menu menu-vertical px-1">
-            <li>
-              <a>Link</a>
-            </li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="bg-base-100 rounded-t-none p-2">
-                  <li>
-                    <a>Link 1</a>
-                  </li>
-                  <li>
-                    <a>Link 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-          </ul>
-        </div>
+      <div>
+        <p className="pl-6">MAIN</p>
+        <ul className="menu bg-base-100 w-56 text-lg">
+          <li>
+            <NavLink to="/perusahaan/naon">Naon</NavLink>
+          </li>
+          <li>
+            <NavLink to="/perusahaan/euy">Perusahaan</NavLink>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p className="pl-6">MAIN</p>
+        <ul className="menu bg-base-100 w-56 text-lg">
+          <li>
+            <a className="active">Dashboard</a>
+          </li>
+          <li>
+            <a>Chart of Accounts</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p className="pl-6">MAIN</p>
+        <ul className="menu bg-base-100 w-56 text-lg">
+          <li>
+            <a className="active">Dashboard</a>
+          </li>
+          <li>
+            <a>Chart of Accounts</a>
+          </li>
+        </ul>
       </div>
     </div>
   );

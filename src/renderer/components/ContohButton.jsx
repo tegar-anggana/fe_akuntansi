@@ -1,11 +1,9 @@
 import React from 'react';
-import {
-  ArrowDownTray,
-  ArrowUpTray,
-  MagnifyingGlass,
-  PlusCircle,
-  Printer,
-} from './FDPJIcons';
+import { PlusCircle } from './Icons/PlusCircle';
+import { ArrowDownTray } from './Icons/ArrowDownTray';
+import { ArrowUpTray } from './Icons/ArrowUpTray';
+import { MagnifyingGlass } from './Icons/MagnifyingGlass';
+import { Printer } from './Icons/Printer';
 
 export default function ContohButton() {
   return (

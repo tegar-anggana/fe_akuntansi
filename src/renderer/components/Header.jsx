@@ -31,11 +31,11 @@ const Header = () => {
         <div className='cta'>
           {userInfo ? (
             <button className='button' onClick={() => dispatch(logout())}>
-              Logout
+              Keluar
             </button>
           ) : (
             <NavLink className='button' to='/login'>
-              Login
+              Masuk
             </NavLink>
           )}
         </div>
@@ -45,6 +45,7 @@ const Header = () => {
         <NavLink to='/login'>Login</NavLink>
         <NavLink to='/register'>Register</NavLink>
         <NavLink to='/user-profile'>Profile</NavLink>
+        <NavLink to='/perusahaan'>Perusahaan</NavLink>
       </nav>
     </header>
   )

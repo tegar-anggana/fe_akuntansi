@@ -13,12 +13,15 @@ import ProtectedRoute from './routing/ProtectedRoute';
 import './App.css';
 import 'tailwindcss/tailwind.css';
 import DaisyUIDemo from './DaisyUIDemo';
+import SidebarLayout from './screens/layouts/SidebarLayout';
+import PerusahaanScreen from './screens/PerusahaanScreen';
+import HeaderOnlyLayout from './screens/layouts/HeaderOnlyLayout';
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <main className="container content">
+    <div className="h-screen font-nunito-sans">
+      <Router>
+        {/* <Header /> */}
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/login" element={<LoginScreen />} />
@@ -27,9 +30,13 @@ function App() {
             <Route path="/user-profile" element={<ProfileScreen />} />
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="/perusahaan" element={<HeaderOnlyLayout />}>
+            <Route index element={<PerusahaanScreen />} />
+            <Route path="/perusahaan/naon" element={<h1>Hello</h1>} />
+          </Route>
         </Routes>
-      </main>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

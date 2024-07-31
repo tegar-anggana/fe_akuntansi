@@ -31,11 +31,11 @@ module.exports = {
           'secondary-content': '#ffffff', // Foreground content color to use on secondary color
           accent: '#DCF0EA', // Accent color
           'accent-content': '#43967F', // Foreground content color to use on accent color
-          neutral: '#ff00ff', // Neutral color
-          'neutral-content': '#160016', // Foreground content color to use on neutral color
+          neutral: '#DCF0EA', // Neutral color
+          'neutral-content': '#43967F', // Foreground content color to use on neutral color
           'base-100': '#ffffff', // Base color of page, used for blank backgrounds
-          'base-200': '#747474', // Base color, a little darker
-          'base-300': '#bebebe', // Base color, even more darker
+          'base-200': '#eaeaea', // Base color, a little darker
+          'base-300': '#747474', // Base color, even more darker
           'base-content': '#161616', // Foreground content color to use on base color
           info: '#0000ff', // Info color
           'info-content': '#c6dbff', // Foreground content color to use on info color
