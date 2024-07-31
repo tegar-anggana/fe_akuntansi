@@ -16,24 +16,20 @@ import DaisyUIDemo from './DaisyUIDemo';
 
 function App() {
   return (
-    // <Router>
-    //   <Header />
-    //   <main className="container content">
-    //     <Routes>
-    //       <Route path="/" element={<HomeScreen />} />
-    //       <Route path="/login" element={<LoginScreen />} />
-    //       <Route path="/register" element={<RegisterScreen />} />
-    //       <Route element={<ProtectedRoute />}>
-    //         <Route path="/user-profile" element={<ProfileScreen />} />
-    //       </Route>
-    //       <Route path="*" element={<Navigate to="/" replace />} />
-    //     </Routes>
-    //   </main>
-    // </Router>
-    <div>
-      <h1>Hello FDPJ</h1>
-      <DaisyUIDemo />
-    </div>
+    <Router>
+      <Header />
+      <main className="container content">
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/login" element={<LoginScreen />} />
+          <Route path="/register" element={<RegisterScreen />} />
+          <Route element={<ProtectedRoute />}>
+            <Route path="/user-profile" element={<ProfileScreen />} />
+          </Route>
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </main>
+    </Router>
   );
 }
 

@@ -1,5 +1,11 @@
-const HomeScreen = () => {
-  return <h1>User Authentication with Redux Toolkit & JWTs</h1>
-}
+import DaisyUIDemo from '../DaisyUIDemo';
 
-export default HomeScreen
+const HomeScreen = () => {
+  return (
+    <div>
+      <DaisyUIDemo />
+    </div>
+  );
+};
+
+export default HomeScreen;
