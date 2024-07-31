@@ -29,8 +29,8 @@ module.exports = {
           'primary-content': '#ffffff', // Foreground content color to use on primary color
           secondary: '#747474', // Secondary color
           'secondary-content': '#ffffff', // Foreground content color to use on secondary color
-          accent: '#00ffff', // Accent color
-          'accent-content': '#001616', // Foreground content color to use on accent color
+          accent: '#DCF0EA', // Accent color
+          'accent-content': '#43967F', // Foreground content color to use on accent color
           neutral: '#ff00ff', // Neutral color
           'neutral-content': '#160016', // Foreground content color to use on neutral color
           'base-100': '#ffffff', // Base color of page, used for blank backgrounds

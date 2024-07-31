@@ -54,6 +54,9 @@ export default function ContohButton() {
           Print
         </button>
       </div>
+      <div>
+        <button className="btn btn-accent">Accent Sidebar</button>
+      </div>
     </div>
   );
 }
