@@ -31,35 +31,23 @@ export default function PerusahaanScreen() {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap gap-2">
-        <div className="rounded-xl bg-base-100 w-64 shadow-md cursor-pointer">
-          <div className="p-4 pb-0">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-              alt="Shoes"
-              className="rounded-lg"
-            />
+      <div className="flex flex-wrap gap-2 justify-start">
+        <NavLink to="/dashboard/index">
+          <div className="rounded-xl bg-base-100 w-64 shadow-md cursor-pointer">
+            <div className="p-4 pb-0">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                alt="Shoes"
+                className="rounded-lg"
+              />
+            </div>
+            <div className="py-3">
+              <p className="text-sm font-bold text-center">
+                PT Future Digital Product Jaya
+              </p>
+            </div>
           </div>
-          <div className="py-3">
-            <p className="text-sm font-bold text-center">
-              PT Future Digital Product Jaya
-            </p>
-          </div>
-        </div>
-        <div className="rounded-xl bg-base-100 w-64 shadow-md cursor-pointer">
-          <div className="p-4 pb-0">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-              alt="Shoes"
-              className="rounded-lg"
-            />
-          </div>
-          <div className="py-3">
-            <p className="text-sm font-bold text-center">
-              PT Future Digital Product Jaya
-            </p>
-          </div>
-        </div>
+        </NavLink>
       </div>
     </div>
   );

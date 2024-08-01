@@ -3,37 +3,21 @@ import { NavLink } from 'react-router-dom';
 
 export default function SideBar() {
   return (
-    <div>
+    <div className='bg-base-100 pt-3'>
       <div>
-        <p className="pl-6">MAIN</p>
-        <ul className="menu bg-base-100 w-56 text-lg">
+        <p className="pl-6 text-xs">MAIN</p>
+        <ul className="menu w-56 text-base">
           <li>
-            <NavLink to="/perusahaan/naon">Naon</NavLink>
+            <NavLink to="/dashboard/index">Dashboard</NavLink>
           </li>
           <li>
-            <NavLink to="/perusahaan/euy">Perusahaan</NavLink>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <p className="pl-6">MAIN</p>
-        <ul className="menu bg-base-100 w-56 text-lg">
-          <li>
-            <a className="active">Dashboard</a>
+            <NavLink to="/dashboard/coa">Chart of Account</NavLink>
           </li>
           <li>
-            <a>Chart of Accounts</a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <p className="pl-6">MAIN</p>
-        <ul className="menu bg-base-100 w-56 text-lg">
-          <li>
-            <a className="active">Dashboard</a>
+            <NavLink to="/perusahaan">Perusahaan</NavLink>
           </li>
           <li>
-            <a>Chart of Accounts</a>
+            <NavLink to="/">Contoh Button</NavLink>
           </li>
         </ul>
       </div>

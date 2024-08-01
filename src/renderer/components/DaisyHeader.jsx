@@ -3,7 +3,7 @@ import React from 'react';
 export default function DaisyHeader() {
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 shadow-xl border-b-2 border-base-200">
         <div className="flex-1">
           <a className="btn btn-ghost text-xl">FDPJ Solution</a>
         </div>
